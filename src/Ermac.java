@@ -13,6 +13,12 @@ public class Ermac extends Ninja implements SpecialMoves {
     }
 
     @Override
+    public void taunt() {
+        System.out.println("**Ermac** " + getName() + " угарает над противником по Ермаковски");
+        super.taunt();
+    }
+
+    @Override
     public void executeFatality() {
         System.out.println("**Ermac** " + getName() + " начинает фаталити");
     }

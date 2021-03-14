@@ -13,8 +13,14 @@ public class Scorpio extends Ninja implements SpecialMoves {
     }
 
     @Override
+    public void taunt() {
+        System.out.println("**Scorpio** " + getName() + " угарает над противником по Скорпионовски");
+        super.taunt();
+    }
+
+    @Override
     public void executeFatality() {
-        System.out.println("**Scorpio** " + getName() + " начинает фаталити");
+        System.out.println("**Scorpio** " + getName() + " набрана павильная комбинация для фаталити Скорпиона");
     }
 
     @Override
